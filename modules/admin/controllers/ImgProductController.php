@@ -1,9 +1,9 @@
 <?php
 
-namespace app\controllers;
+namespace app\modules\admin\controllers;
 
-use app\models\ImgProduct;
-use app\models\ImgProductSearch;
+use app\modules\admin\models\ImgProduct;
+use app\modules\admin\models\ImgProductSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

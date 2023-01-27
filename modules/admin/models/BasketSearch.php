@@ -1,13 +1,13 @@
 <?php
 
-namespace app\models;
+namespace app\modules\admin\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\Basket;
+use app\modules\admin\models\Basket;
 
 /**
- * BasketSearch represents the model behind the search form of `app\models\Basket`.
+ * BasketSearch represents the model behind the search form of `app\modules\admin\models\Basket`.
  */
 class BasketSearch extends Basket
 {

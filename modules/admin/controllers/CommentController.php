@@ -1,9 +1,9 @@
 <?php
 
-namespace app\controllers;
+namespace app\modules\admin\controllers;
 
-use app\models\Comment;
-use app\models\CommentSearch;
+use app\modules\admin\models\Comment;
+use app\modules\admin\models\CommentSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

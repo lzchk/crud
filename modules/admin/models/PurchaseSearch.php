@@ -1,13 +1,13 @@
 <?php
 
-namespace app\models;
+namespace app\modules\admin\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\Purchase;
+use app\modules\admin\models\Purchase;
 
 /**
- * PurchaseSearch represents the model behind the search form of `app\models\Purchase`.
+ * PurchaseSearch represents the model behind the search form of `app\modules\admin\models\Purchase`.
  */
 class PurchaseSearch extends Purchase
 {

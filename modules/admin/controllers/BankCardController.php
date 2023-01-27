@@ -1,9 +1,9 @@
 <?php
 
-namespace app\controllers;
+namespace app\modules\admin\controllers;
 
-use app\models\BankCard;
-use app\models\BankCardSearch;
+use app\modules\admin\models\BankCard;
+use app\modules\admin\models\BankCardSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

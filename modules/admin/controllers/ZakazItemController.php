@@ -1,9 +1,9 @@
 <?php
 
-namespace app\controllers;
+namespace app\modules\admin\controllers;
 
-use app\models\ZakazItem;
-use app\models\ZakazItemSearch;
+use app\modules\admin\models\ZakazItem;
+use app\modules\admin\models\ZakazItemSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

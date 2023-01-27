@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 
 /** @var yii\web\View $this */
-/** @var app\models\City $model */
+/** @var app\modules\admin\models\City $model */
 
 $this->title = 'Создание городов';
 $this->params['breadcrumbs'][] = ['label' => 'Cities', 'url' => ['index']];

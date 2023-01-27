@@ -1,10 +1,10 @@
 <?php
 
-namespace app\controllers;
+namespace app\modules\admin\controllers;
 
-use app\models\RegForm;
-use app\models\User;
-use app\models\UserSearch;
+use app\modules\admin\models\RegForm;
+use app\modules\admin\models\User;
+use app\modules\admin\models\UserSearch;
 use yii\helpers\VarDumper;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;

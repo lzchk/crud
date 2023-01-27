@@ -1,9 +1,9 @@
 <?php
 
-namespace app\controllers;
+namespace app\modules\admin\controllers;
 
-use app\models\Basket;
-use app\models\BasketSearch;
+use app\modules\admin\models\Basket;
+use app\modules\admin\models\BasketSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

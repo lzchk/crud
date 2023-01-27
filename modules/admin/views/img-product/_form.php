@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /** @var yii\web\View $this */
-/** @var app\models\ImgProduct $model */
+/** @var app\modules\admin\models\ImgProduct $model */
 /** @var yii\widgets\ActiveForm $form */
 ?>
 
@@ -14,7 +14,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'id_product')->dropDownList(\yii\helpers\ArrayHelper::map(\app\models\Product::find()->all(), 'id','name')) ?>
+    <?= $form->field($model, 'id_product')->dropDownList(\yii\helpers\ArrayHelper::map(\app\modules\admin\models\Product::find()->all(), 'id','name')) ?>
 
     <?= $form->field($model, 'path')->textInput() ?>
 

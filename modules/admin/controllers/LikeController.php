@@ -1,9 +1,9 @@
 <?php
 
-namespace app\controllers;
+namespace app\modules\admin\controllers;
 
-use app\models\Like;
-use app\models\LikeSearch;
+use app\modules\admin\models\Like;
+use app\modules\admin\models\LikeSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

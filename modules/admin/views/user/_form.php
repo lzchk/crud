@@ -5,7 +5,7 @@ use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
 
 /** @var yii\web\View $this */
-/** @var app\models\UserB $model */
+/** @var app\models\User $model */
 /** @var yii\widgets\ActiveForm $form */
 ?>
 
@@ -24,6 +24,8 @@ use yii\helpers\ArrayHelper;
 
     <?= $form->field($model, 'password')->passwordInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'passwordConfirm')->passwordInput(['maxlength' => true]) ?>
+
     <?= $form->field($model, 'id_city')->dropDownList(\yii\helpers\ArrayHelper::map(\app\models\City::find()->all(), 'id','name')) ?>
 
     <?= $form->field($model, 'date_of_birth')->textInput(['type' => 'datetime-local']) ?>
@@ -34,7 +36,7 @@ use yii\helpers\ArrayHelper;
 
     <?= $form->field($model, 'currency')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'role')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'agree')->checkbox() ?>
 
     <div class="form-group">
         <?= Html::submitButton('Сохранить', ['class' => 'btn btn-success']) ?>

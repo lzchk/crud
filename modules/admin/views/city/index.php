@@ -1,13 +1,13 @@
 <?php
 
-use app\models\City;
+use app\modules\admin\models\City;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\grid\ActionColumn;
 use yii\grid\GridView;
 
 /** @var yii\web\View $this */
-/** @var app\models\CitySearch $searchModel */
+/** @var app\modules\admin\models\CitySearch $searchModel */
 /** @var yii\data\ActiveDataProvider $dataProvider */
 
 $this->title = 'Города';

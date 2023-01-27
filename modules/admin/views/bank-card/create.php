@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 
 /** @var yii\web\View $this */
-/** @var app\models\BankCard $model */
+/** @var app\modules\admin\models\BankCard $model */
 
 $this->title = 'Создание банковской карты';
 $this->params['breadcrumbs'][] = ['label' => 'Bank Cards', 'url' => ['index']];

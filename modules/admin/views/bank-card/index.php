@@ -1,13 +1,13 @@
 <?php
 
-use app\models\BankCard;
+use app\modules\admin\models\BankCard;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\grid\ActionColumn;
 use yii\grid\GridView;
 
 /** @var yii\web\View $this */
-/** @var app\models\BankCardSearch $searchModel */
+/** @var app\modules\admin\models\BankCardSearch $searchModel */
 /** @var yii\data\ActiveDataProvider $dataProvider */
 
 $this->title = 'Банковские карты';

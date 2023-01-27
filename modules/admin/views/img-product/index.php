@@ -1,13 +1,13 @@
 <?php
 
-use app\models\ImgProduct;
+use app\modules\admin\models\ImgProduct;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\grid\ActionColumn;
 use yii\grid\GridView;
 
 /** @var yii\web\View $this */
-/** @var app\models\ImgProductSearch $searchModel */
+/** @var app\modules\admin\models\ImgProductSearch $searchModel */
 /** @var yii\data\ActiveDataProvider $dataProvider */
 
 $this->title = 'Фотографии товаров';

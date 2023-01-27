@@ -1,13 +1,13 @@
 <?php
 
-use app\models\UserB;
+use app\models\User;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\grid\ActionColumn;
 use yii\grid\GridView;
 
 /** @var yii\web\View $this */
-/** @var app\models\UserBSearch $searchModel */
+/** @var app\models\UserSearch $searchModel */
 /** @var yii\data\ActiveDataProvider $dataProvider */
 
 $this->title = 'Пользователи';
@@ -43,7 +43,7 @@ $this->params['breadcrumbs'][] = $this->title;
             //'role',
             [
                 'class' => ActionColumn::className(),
-                'urlCreator' => function ($action, UserB $model, $key, $index, $column) {
+                'urlCreator' => function ($action, User $model, $key, $index, $column) {
                     return Url::toRoute([$action, 'id' => $model->id]);
                  }
             ],

@@ -1,13 +1,13 @@
 <?php
 
-use app\models\Comment;
+use app\modules\admin\models\Comment;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\grid\ActionColumn;
 use yii\grid\GridView;
 
 /** @var yii\web\View $this */
-/** @var app\models\CommentSearch $searchModel */
+/** @var app\modules\admin\models\CommentSearch $searchModel */
 /** @var yii\data\ActiveDataProvider $dataProvider */
 
 $this->title = 'Комментрии';

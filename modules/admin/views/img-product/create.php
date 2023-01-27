@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 
 /** @var yii\web\View $this */
-/** @var app\models\ImgProduct $model */
+/** @var app\modules\admin\models\ImgProduct $model */
 
 $this->title = 'Создание фотографий товаров';
 $this->params['breadcrumbs'][] = ['label' => 'Img Products', 'url' => ['index']];

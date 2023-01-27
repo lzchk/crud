@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 
 /** @var yii\web\View $this */
-/** @var app\models\Basket $model */
+/** @var app\modules\admin\models\Basket $model */
 
 $this->title = 'Создание корзины';
 $this->params['breadcrumbs'][] = ['label' => 'Baskets', 'url' => ['index']];

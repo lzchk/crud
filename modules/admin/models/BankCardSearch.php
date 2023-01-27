@@ -1,13 +1,13 @@
 <?php
 
-namespace app\models;
+namespace app\modules\admin\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\BankCard;
+use app\modules\admin\models\BankCard;
 
 /**
- * BankCardSearch represents the model behind the search form of `app\models\BankCard`.
+ * BankCardSearch represents the model behind the search form of `app\modules\admin\models\BankCard`.
  */
 class BankCardSearch extends BankCard
 {

@@ -5,7 +5,7 @@ use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
 
 /** @var yii\web\View $this */
-/** @var app\models\DeliveryAddress $model */
+/** @var app\modules\admin\models\DeliveryAddress $model */
 /** @var yii\widgets\ActiveForm $form */
 ?>
 
@@ -13,11 +13,11 @@ use yii\helpers\ArrayHelper;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'id_user')->dropDownList(\yii\helpers\ArrayHelper::map(\app\models\User::find()->all(), 'id','name')) ?>
+    <?= $form->field($model, 'id_user')->dropDownList(\yii\helpers\ArrayHelper::map(\app\modules\admin\models\User::find()->all(), 'id','name')) ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'id_city')->dropDownList(\yii\helpers\ArrayHelper::map(\app\models\City::find()->all(), 'id','name')) ?>
+    <?= $form->field($model, 'id_city')->dropDownList(\yii\helpers\ArrayHelper::map(\app\modules\admin\models\City::find()->all(), 'id','name')) ?>
 
     <?= $form->field($model, 'street')->textInput(['maxlength' => true]) ?>
 

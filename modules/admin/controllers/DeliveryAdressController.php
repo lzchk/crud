@@ -1,9 +1,9 @@
 <?php
 
-namespace app\controllers;
+namespace app\modules\admin\controllers;
 
-use app\models\DeliveryAddress;
-use app\models\DeliveryAdressSearch;
+use app\modules\admin\models\DeliveryAddress;
+use app\modules\admin\models\DeliveryAdressSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
