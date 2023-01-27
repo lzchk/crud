@@ -9,15 +9,18 @@
 Для того, чтобя скачать проект на компьютер необходимо:
 <br>1. Зайти на эту ссылку в gitHub :)
 <br>3. Зайти в папку OSPanel/domains (если не можете найти, поищите во все файлах папку OSPanel);<br>
-<img src="img/step1.JFIF" alt="img" height="100px">
+<img src="https://github.com/lzchk/crud/blob/main/img/step1.jfif" alt="img" height="350px">
 <br>4. Скопировать путь сверху;
+<img src="https://github.com/lzchk/crud/blob/main/img/step2.jpg" alt="img" height="150px">
 <br>5. Открыть CMD (нажать на кнопку WIN и написать CMD);
+<br>
+<img src="https://github.com/lzchk/crud/blob/main/img/step3.jfif" alt="img" height="450px">
 <br>6. В появившемся окне написать:
 -------------------
 
       cd *путь который вы скопировали*
       git clone *ссылка на этот репозиторий*
-
+<img src="https://github.com/lzchk/crud/blob/main/img/step4.jfif" alt="img" height="250px">
 Папка с названием crud2 появится у вас на компьютере в папке domains;
 <br>7. На своем компьютере запустите OSPanel (Open Server Panel);
 <br>8. Нажать на появившся флажок, нажать запустить и подождать несколько секунд;
