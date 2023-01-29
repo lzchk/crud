@@ -27,30 +27,30 @@
 <br>8. Нажать на появившся флажок, нажать запустить и подождать несколько секунд;
 <img src="https://github.com/lzchk/crud/blob/main/img/step8.jfif" alt="img" height="250px">
 <br>9. Нажать вкладку дополнительно и перейти в PhpMyAdmin;
-<img src="https://github.com/lzchk/crud/blob/main/img/step7.PNG" alt="img" height="250px">
+<img src="https://github.com/lzchk/crud/blob/main/img/step9.jfif" alt="img" height="250px">
 <br>10. В появившейся форме в строке Пользователь надо написать:
-<img src="https://github.com/lzchk/crud/blob/main/img/step7.PNG" alt="img" height="250px">
+<img src="https://github.com/lzchk/crud/blob/main/img/step10.jfif" alt="img" height="250px">
 -------------------
 
       root
 <br>11. Далее слева нужно нажать кнопку "Создать БД"
-<img src="https://github.com/lzchk/crud/blob/main/img/step7.PNG" alt="img" height="250px">
+<br><img src="https://github.com/lzchk/crud/blob/main/img/12.jfif" alt="img" height="250px">
 <br>12. В поле "Имя базы данных" написать: 
 -------------------
 
       no_ozon
 
 <br>13. Выбрать тип:
-<img src="https://github.com/lzchk/crud/blob/main/img/step7.PNG" alt="img" height="250px">
+<br><img src="https://github.com/lzchk/crud/blob/main/img/13.jfif" alt="img" height="250px">
 -------------------
 
       utf8mb3_general_ci
 
 И нажать кнопку создать;
 <br>14. В левом списке баз данных нужно выбрать ту, что вы только что создали (назвается no_ozon, если забыли);
-<img src="https://github.com/lzchk/crud/blob/main/img/step7.PNG" alt="img" height="250px">
+<br><img src="https://github.com/lzchk/crud/blob/main/img/14.PNG" alt="img" height="250px">
 <br>15. В открывшейся базе банных сверху будет меню, нужно нажать пункт "Импорт";
-<img src="https://github.com/lzchk/crud/blob/main/img/step7.PNG" alt="img" height="250px">
+<br><img src="https://github.com/lzchk/crud/blob/main/img/15.PNG" alt="img" height="250px">
 <br>Далее необходимо нажать на кнопку "Выберите файл" и зайти в папку crud2 (находится в OSPanel\domains) и выбрать файл 
 -------------------
 
@@ -58,19 +58,19 @@
 
 <br>Листаем в самый низ страницы и нажимаем кнопку "Импорт";
 На вашем компьютере появится такая прекрасная база данных:
-<img src="https://github.com/lzchk/crud/blob/main/img/step7.PNG" alt="img" height="250px">
+<img src="https://github.com/lzchk/crud/blob/main/img/16.PNG" alt="img" height="250px">
 <br>16. Далее нужно снова нажать на флажок, дополнительно и перейти в консоль.
-<img src="https://github.com/lzchk/crud/blob/main/img/step7.PNG" alt="img" height="250px">
+<br><img src="https://github.com/lzchk/crud/blob/main/img/18.PNG" alt="img" height="250px">
 <br>17. В консоли пишем:
-<img src="https://github.com/lzchk/crud/blob/main/img/step7.PNG" alt="img" height="250px">
+<br><img src="https://github.com/lzchk/crud/blob/main/img/19.PNG" alt="img" height="250px">
 -------------------
 
       cd domains
       cd crud2
       composer u
 Теперь наддо подождать 1-2 минуты.
-<br>. Мы почти закончили. Осталось снова нажать на флажок, вкладку "Мои проекты" и выбрать crud2;
-<img src="https://github.com/lzchk/crud/blob/main/img/step7.PNG" alt="img" height="250px">
-<br>. 
-<br>. Поздравляю, вы великолепны!
-<img src="https://github.com/lzchk/crud/blob/main/img/step7.PNG" alt="img" height="250px">
+<br>18. Мы почти закончили. Осталось снова нажать на флажок, вкладку "Мои проекты" и выбрать crud2;
+<br><img src="https://github.com/lzchk/crud/blob/main/img/21.png" alt="img" height="250px">
+<br> 
+<br>19. Поздравляю, вы великолепны!
+<br><img src="https://github.com/lzchk/crud/blob/main/img/20.jfif" alt="img" height="250px">
