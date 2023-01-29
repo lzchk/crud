@@ -65,10 +65,10 @@
 -------------------
 
       cd domains
-      cd crud2
+      cd crud
       composer u
 Теперь наддо подождать 1-2 минуты.
-<br>20. Мы почти закончили. Осталось снова нажать на флажок, вкладку "Мои проекты", выбрать crud2. На открывшейся странице выбрать папку "web";
+<br>20. Мы почти закончили. Осталось снова нажать на флажок, вкладку "Мои проекты", выбрать crud. На открывшейся странице выбрать папку "web";
 <br><img src="https://github.com/lzchk/crud/blob/main/img/18.png" alt="img" height="250px">
 <br><img src="https://github.com/lzchk/crud/blob/main/img/19.PNG" alt="img" height="450px">
 <br> 
