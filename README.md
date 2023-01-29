@@ -29,10 +29,11 @@
 <br>9. Нажать вкладку дополнительно и перейти в PhpMyAdmin;
 <img src="https://github.com/lzchk/crud/blob/main/img/step9.jfif" alt="img" height="250px">
 <br>10. В появившейся форме в строке Пользователь надо написать:
-<img src="https://github.com/lzchk/crud/blob/main/img/step10.jfif" alt="img" height="250px">
 -------------------
 
       root
+      
+<img src="https://github.com/lzchk/crud/blob/main/img/step10.jfif" alt="img" height="250px">
 <br>11. Далее слева нужно нажать кнопку "Создать БД"
 <br><img src="https://github.com/lzchk/crud/blob/main/img/12.jfif" alt="img" height="250px">
 <br>12. В поле "Имя базы данных" написать: 
@@ -41,21 +42,20 @@
       no_ozon
 
 <br>13. Выбрать тип:
-<br><img src="https://github.com/lzchk/crud/blob/main/img/13.jfif" alt="img" height="250px">
 -------------------
 
       utf8mb3_general_ci
 
 И нажать кнопку создать;
+<br><img src="https://github.com/lzchk/crud/blob/main/img/13.jfif" alt="img" height="250px">
 <br>14. В левом списке баз данных нужно выбрать ту, что вы только что создали (назвается no_ozon, если забыли);
 <br>15. В открывшейся базе банных сверху будет меню, нужно нажать пункт "Импорт";
 <br><img src="https://github.com/lzchk/crud/blob/main/img/14.PNG" alt="img" height="250px">
 <br>16. Далее необходимо нажать на кнопку "Выберите файл" и зайти в папку crud2 (находится в OSPanel\domains) и выбрать файл 
-<br><img src="https://github.com/lzchk/crud/blob/main/img/15.PNG" alt="img" height="250px">
 -------------------
 
       no_ozon.sql
-
+<br><img src="https://github.com/lzchk/crud/blob/main/img/15.PNG" alt="img" height="250px">
 <br>17. Листаем в самый низ страницы и нажимаем кнопку "Импорт";
 На вашем компьютере появится такая прекрасная база данных:
 <br><img src="https://github.com/lzchk/crud/blob/main/img/16.PNG" alt="img" height="250px">
