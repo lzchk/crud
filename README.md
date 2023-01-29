@@ -48,29 +48,29 @@
 
 И нажать кнопку создать;
 <br>14. В левом списке баз данных нужно выбрать ту, что вы только что создали (назвается no_ozon, если забыли);
-<br><img src="https://github.com/lzchk/crud/blob/main/img/14.PNG" alt="img" height="250px">
 <br>15. В открывшейся базе банных сверху будет меню, нужно нажать пункт "Импорт";
+<br><img src="https://github.com/lzchk/crud/blob/main/img/14.PNG" alt="img" height="250px">
+<br>16. Далее необходимо нажать на кнопку "Выберите файл" и зайти в папку crud2 (находится в OSPanel\domains) и выбрать файл 
 <br><img src="https://github.com/lzchk/crud/blob/main/img/15.PNG" alt="img" height="250px">
-<br>Далее необходимо нажать на кнопку "Выберите файл" и зайти в папку crud2 (находится в OSPanel\domains) и выбрать файл 
 -------------------
 
       no_ozon.sql
 
-<br>Листаем в самый низ страницы и нажимаем кнопку "Импорт";
+<br>17. Листаем в самый низ страницы и нажимаем кнопку "Импорт";
 На вашем компьютере появится такая прекрасная база данных:
-<img src="https://github.com/lzchk/crud/blob/main/img/16.PNG" alt="img" height="250px">
-<br>16. Далее нужно снова нажать на флажок, дополнительно и перейти в консоль.
-<br><img src="https://github.com/lzchk/crud/blob/main/img/18.PNG" alt="img" height="250px">
-<br>17. В консоли пишем:
-<br><img src="https://github.com/lzchk/crud/blob/main/img/19.PNG" alt="img" height="250px">
+<br><img src="https://github.com/lzchk/crud/blob/main/img/16.PNG" alt="img" height="250px">
+<br><img src="https://github.com/lzchk/crud/blob/main/img/21.png" alt="img" height="250px">
+<br>18. Далее нужно снова нажать на флажок, дополнительно и перейти в консоль.
+<br>19. В консоли пишем:
 -------------------
 
       cd domains
       cd crud2
       composer u
 Теперь наддо подождать 1-2 минуты.
-<br>18. Мы почти закончили. Осталось снова нажать на флажок, вкладку "Мои проекты" и выбрать crud2;
-<br><img src="https://github.com/lzchk/crud/blob/main/img/21.png" alt="img" height="250px">
+<br>20. Мы почти закончили. Осталось снова нажать на флажок, вкладку "Мои проекты", выбрать crud2. На открывшейся странице выбрать папку "web";
+<br><img src="https://github.com/lzchk/crud/blob/main/img/18.png" alt="img" height="250px">
+<br><img src="https://github.com/lzchk/crud/blob/main/img/19.PNG" alt="img" height="450px">
 <br> 
-<br>19. Поздравляю, вы великолепны!
+<br>21. Поздравляю, вы великолепны!
 <br><img src="https://github.com/lzchk/crud/blob/main/img/20.jfif" alt="img" height="250px">
