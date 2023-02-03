@@ -39,26 +39,27 @@ AppAsset::register($this);
         'items' => [
             ['label' => 'Главная', 'url' => ['/site/index']],
             ['label' => 'О нас', 'url' => ['/site/about']],
-            ['label' => 'Регистрация', 'url' => ['/user/create']],
-            ['label' => 'Банковские карты', 'url' => ['/bank-card/index']],
-            ['label' => 'Корзины', 'url' => ['/basket/index']],
-            ['label' => 'Категории', 'url' => ['/category/index']],
-            ['label' => 'Города', 'url' => ['/city/index']],
-            ['label' => 'Комментрии', 'url' => ['/comment/index']],
-            ['label' => 'Компании', 'url' => ['/company/index']],
-            ['label' => 'Доставки', 'url' => ['/delivery-adress/index']],
-            ['label' => 'Фотографии', 'url' => ['/img-product/index']],
-            ['label' => 'Избранные', 'url' => ['/like/index']],
-            ['label' => 'Продукты', 'url' => ['/product/index']],
-            ['label' => 'Заказ', 'url' => ['/purchase/index']],
-            ['label' => 'Пользователи', 'url' => ['/user/index']],
-            ['label' => 'Заказ с товарами', 'url' => ['/zakaz-item/index']],
+            ['label' => 'Регистрация', 'url' => ['/admin/user/create']],
+            ['label' => 'Банковские карты', 'url' => ['/admin/bank-card/index']],
+            ['label' => 'Корзины', 'url' => ['/admin/basket/index']],
+            ['label' => 'Категории', 'url' => ['/admin/category/index']],
+            ['label' => 'Города', 'url' => ['/admin/city/index']],
+            ['label' => 'Комментрии', 'url' => ['/admin/comment/index']],
+            ['label' => 'Компании', 'url' => ['/admin/company/index']],
+            ['label' => 'Доставки', 'url' => ['/admin/delivery-adress/index']],
+            ['label' => 'Фотографии', 'url' => ['/admin/img-product/index']],
+            ['label' => 'Избранные', 'url' => ['/admin/like/index']],
+            ['label' => 'Продукты', 'url' => ['/admin/product/index']],
+            ['label' => 'Заказ', 'url' => ['/admin/purchase/index']],
+            ['label' => 'Пользователи', 'url' => ['/admin/user/index']],
+            ['label' => 'Заказ с товарами', 'url' => ['/admin/zakaz-item/index']],
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
             ) : (
                 '<li>'
                 . Html::beginForm(['/site/logout'], 'post', ['class' => 'form-inline'])
                 . Html::submitButton(
+//                        если пользователь авторизован, выводится его логин
                     'Logout (' . Yii::$app->user->identity->login . ')',
                     ['class' => 'btn btn-link logout']
                 )

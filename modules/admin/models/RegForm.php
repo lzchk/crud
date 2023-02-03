@@ -2,6 +2,8 @@
 
 namespace app\modules\admin\models;
 
+use app\models\User;
+use app\modules\admin\models\City;
 use Yii;
 
 /**
@@ -42,6 +44,9 @@ class RegForm extends User
     public function rules()
     {
         return [
+//           required -  обязательные поля
+//           unique - уникальные поля, которые не должны повторяться в БД (базе данных)
+//           pattern - символы, которые можно вводить в поле
             [['email', 'phone', 'login', 'password', 'id_city', 'date_of_birth', 'sex', 'currency', 'passwordConfirm', 'agree', 'name'], 'required', 'message' => 'Поле обязательно для заполнения!'],
             [['phone'], 'string', 'max' => 100],
             [['phone'], 'unique'],
@@ -55,7 +60,8 @@ class RegForm extends User
             [['login', 'password'], 'string', 'max' => 50],
             ['login', 'match', 'pattern' => '/^[a-zA-Z]{1,}$/u', 'message' => 'Только латинские буквы!'],
             ['login', 'unique', 'message' => 'Такой логин уже используется!'],
-            ['email', 'email', 'message' => 'Некорректный email!'], ['email', 'unique', 'message' => 'Такой email уже используется!'],
+            ['email', 'email', 'message' => 'Некорректный email!'],
+            ['email', 'unique', 'message' => 'Такой email уже используется!'],
             [['avatar'], 'string', 'max' => 300],
             [['role'], 'string', 'max' => 20],
             [['id_city'], 'exist', 'skipOnError' => true, 'targetClass' => City::class, 'targetAttribute' => ['id_city' => 'id']],

@@ -3,7 +3,7 @@
 namespace app\modules\admin\controllers;
 
 use app\modules\admin\models\RegForm;
-use app\modules\admin\models\User;
+use app\models\User;
 use app\modules\admin\models\UserSearch;
 use yii\helpers\VarDumper;
 use yii\web\Controller;
@@ -69,11 +69,15 @@ class UserController extends Controller
      */
     public function actionCreate()
     {
+//      создаем модель RegForm
+//      теперь при нажатии на регистрацию мы переходим в RegForm, а не User
         $model = new RegForm();
 
         if ($this->request->isPost) {
             if ($model->load($this->request->post()) && $model->save()) {
+//              после регистрации нового пользователя система сразу авторизирует нас под его именем
                 \Yii::$app->user->login($model);
+//              перенаправить на страницу с пользователями
                 return $this->redirect(['user/index']);
             }
         } else {

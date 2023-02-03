@@ -2,7 +2,15 @@
 
 namespace app\models;
 
+use app\modules\admin\models\BankCard;
+use app\modules\admin\models\Basket;
+use app\modules\admin\models\Comment;
+use app\modules\admin\models\Company;
+use app\modules\admin\models\DeliveryAddress;
+use app\modules\admin\models\Like;
+use app\modules\admin\models\Product;
 use Yii;
+use app\modules\admin\models\City;
 
 /**
  * This is the model class for table "user".
@@ -31,6 +39,7 @@ use Yii;
  * @property Product[] $products
  */
 class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
+//implements \yii\web\IdentityInterface - расширяет модель ActiveRecord и реализаует интерфейс
 {
     public $passwordConfirm;
     public $agree;
@@ -58,17 +67,17 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
             [['currency'], 'string', 'max' => 12],
             [['email'], 'string', 'max' => 120],
             [['name'], 'string', 'max' => 120],
-            ['name', 'match', 'pattern' => '#[А-Яа-я\- ]+#', 'message' => 'Только кириллица, пробелы и дефисы'],
+//            ['name', 'match', 'pattern' => '#[А-Яа-я\- ]+#', 'message' => 'Только кириллица, пробелы и дефисы'],
             [['login', 'password'], 'string', 'max' => 50],
-            ['login', 'match', 'pattern' => '/^[a-zA-Z]{1,}$/u', 'message' => 'Только латинские буквы!'],
-            ['login', 'unique', 'message' => 'Такой логин уже используется!'],
-            ['email', 'email', 'message' => 'Некорректный email!'], ['email', 'unique', 'message' => 'Такой email уже используется!'],
+//            ['login', 'match', 'pattern' => '/^[a-zA-Z]{1,}$/u', 'message' => 'Только латинские буквы!'],
+//            ['login', 'unique', 'message' => 'Такой логин уже используется!'],
+//            ['email', 'email', 'message' => 'Некорректный email!'], ['email', 'unique', 'message' => 'Такой email уже используется!'],
             [['avatar'], 'string', 'max' => 300],
             [['role'], 'string', 'max' => 20],
             [['id_city'], 'exist', 'skipOnError' => true, 'targetClass' => City::class, 'targetAttribute' => ['id_city' => 'id']],
-            ['passwordConfirm', 'compare', 'compareAttribute' => 'password', 'message' => 'Пароли должны сопадать!'],
+//            ['passwordConfirm', 'compare', 'compareAttribute' => 'password', 'message' => 'Пароли должны сопадать!'],
             [['agree'], 'boolean'],
-            [['agree'], 'compare', 'compareValue' => true, 'message' => 'Необходимо дать согласие!'],
+//            [['agree'], 'compare', 'compareValue' => true, 'message' => 'Необходимо дать согласие!'],
         ];
     }
 
@@ -194,6 +203,8 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
      */
     public static function findIdentity($id)
     {
+//      поиск пользователя по id в БД(базе данных)
+//      self - класс User ищет id в таблице User
         return self::findOne($id);
     }
 
@@ -213,6 +224,7 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
      */
     public static function findByUsername($username)
     {
+//      с помощью класса User надо найти запись в таблице User, где логин совпадает с тем, что мы ввели в username
         return self::find()->where(['login' => $username])->one();
     }
 

@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
+use app\modules\admin\models\City;
 
 /** @var yii\web\View $this */
 /** @var app\models\User $model */
@@ -26,7 +27,7 @@ use yii\helpers\ArrayHelper;
 
     <?= $form->field($model, 'passwordConfirm')->passwordInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'id_city')->dropDownList(\yii\helpers\ArrayHelper::map(\app\models\City::find()->all(), 'id','name')) ?>
+    <?= $form->field($model, 'id_city')->dropDownList(\yii\helpers\ArrayHelper::map(\app\modules\admin\models\City::find()->all(), 'id','name')) ?>
 
     <?= $form->field($model, 'date_of_birth')->textInput(['type' => 'datetime-local']) ?>
 
