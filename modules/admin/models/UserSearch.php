@@ -7,7 +7,7 @@ use yii\data\ActiveDataProvider;
 use app\models\User;
 
 /**
- * UserSearch represents the model behind the search form of `app\modules\admin\models\User`.
+ * UserSearch represents the model behind the search form of `app\models\User`.
  */
 class UserSearch extends \app\models\User
 {

@@ -2,6 +2,7 @@
 
 namespace app\modules\admin\models;
 
+use app\models\User;
 use Yii;
 use yii\behaviors\TimestampBehavior;
 use yii\db\Expression;
@@ -17,7 +18,7 @@ use yii\widgets\ActiveForm;
  * @property int $rating
  * @property string $created_at
  * @property string $updated_at
- * @property string $id_prod
+ * @property string $id_product
  *
  * @property Product[] $products
  * @property User $user
@@ -38,12 +39,12 @@ class Comment extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id_user', 'rating', 'id_prod'], 'required'],
+            [['id_user', 'rating', 'id_product'], 'required'],
             [['id_user', 'rating'], 'integer'],
             [['text'], 'string'],
             [['created_at', 'updated_at'], 'safe'],
             [['id_user'], 'exist', 'skipOnError' => true, 'targetClass' => User::class, 'targetAttribute' => ['id_user' => 'id']],
-            [['id_prod'], 'exist', 'skipOnError' => true, 'targetClass' => Product::class, 'targetAttribute' => ['id_prod' => 'id']],
+            [['id_product'], 'exist', 'skipOnError' => true, 'targetClass' => Product::class, 'targetAttribute' => ['id_product' => 'id']],
         ];
     }
 
@@ -59,7 +60,7 @@ class Comment extends \yii\db\ActiveRecord
             'rating' => 'Рейтинг',
             'created_at' => 'Опубликован',
             'updated_at' => 'Изменен',
-            'id_prod' => 'Продукт'
+            'id_product' => 'Продукт'
         ];
     }
 

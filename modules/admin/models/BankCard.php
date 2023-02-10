@@ -2,6 +2,7 @@
 
 namespace app\modules\admin\models;
 
+use app\models\User;
 use Yii;
 
 /**
@@ -10,6 +11,7 @@ use Yii;
  * @property int $id
  * @property int $id_user
  * @property string $name
+ * @property int $number
  *
  * @property Purchase[] $purchases
  * @property User $user
@@ -30,8 +32,8 @@ class BankCard extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id_user', 'name'], 'required'],
-            [['id_user'], 'integer'],
+            [['id_user', 'name', 'number'], 'required'],
+            [['id_user','number'], 'integer'],
             [['name'], 'string', 'max' => 50],
             [['id_user'], 'exist', 'skipOnError' => true, 'targetClass' => User::class, 'targetAttribute' => ['id_user' => 'id']],
         ];
@@ -45,7 +47,8 @@ class BankCard extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'id_user' => 'Id Пользователя',
-            'name' => 'Номер',
+            'name' => 'Название',
+            'number' => 'Номер',
         ];
     }
 

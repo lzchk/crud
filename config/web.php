@@ -57,6 +57,12 @@ $config = [
         'admin' => [
             'class' => 'app\modules\admin\Admin',
         ],
+        'manager' => [
+            'class' => 'app\modules\manager\Module',
+        ],
+        'user' => [
+            'class' => 'app\modules\user\Module',
+        ],
     ],
     'params' => $params,
 ];

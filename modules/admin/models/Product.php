@@ -2,7 +2,10 @@
 
 namespace app\modules\admin\models;
 
+use app\models\User;
 use Yii;
+use yii\behaviors\TimestampBehavior;
+use yii\db\Expression;
 
 /**
  * This is the model class for table "product".
@@ -149,5 +152,23 @@ class Product extends \yii\db\ActiveRecord
     public function getPurchases()
     {
         return $this->hasMany(Purchase::class, ['id_product' => 'id']);
+    }
+
+    public function behaviors()
+    {
+        return [
+            [
+                'class' => TimestampBehavior::className(),
+                'createdAtAttribute' => 'created_at',
+                'updatedAtAttribute' => false,
+                'value' => new Expression('NOW()'),
+            ],
+            [
+                'class' => TimestampBehavior::className(),
+                'createdAtAttribute' => false,
+                'updatedAtAttribute' => 'updated_at',
+                'value' => new Expression('NOW()'),
+            ],
+        ];
     }
 }

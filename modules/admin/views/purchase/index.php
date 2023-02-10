@@ -1,13 +1,13 @@
 <?php
 
-use app\models\Purchase;
+use app\modules\admin\models\Purchase;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\grid\ActionColumn;
 use yii\grid\GridView;
 
 /** @var yii\web\View $this */
-/** @var app\models\PurchaseSearch $searchModel */
+/** @var app\modules\admin\models\PurchaseSearch $searchModel */
 /** @var yii\data\ActiveDataProvider $dataProvider */
 
 $this->title = 'Заказы';

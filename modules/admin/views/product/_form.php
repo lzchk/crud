@@ -5,7 +5,7 @@ use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
 
 /** @var yii\web\View $this */
-/** @var app\models\Product $model */
+/** @var app\modules\admin\models\Product $model */
 /** @var yii\widgets\ActiveForm $form */
 ?>
 
@@ -23,19 +23,15 @@ use yii\helpers\ArrayHelper;
 
     <?= $form->field($model, 'characteristic')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'id_company')->dropDownList(\yii\helpers\ArrayHelper::map(\app\models\Company::find()->all(), 'id','name')) ?>
+    <?= $form->field($model, 'id_company')->dropDownList(\yii\helpers\ArrayHelper::map(\app\modules\admin\models\Company::find()->all(), 'id','name')) ?>
 
     <?= $form->field($model, 'rating')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'created_at')->textInput() ?>
-
-    <?= $form->field($model, 'updated_at')->textInput() ?>
 
     <?= $form->field($model, 'created_by')->dropDownList(\yii\helpers\ArrayHelper::map(\app\models\User::find()->all(), 'id','login')) ?>
 
     <?= $form->field($model, 'price')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'id_category')->dropDownList(\yii\helpers\ArrayHelper::map(\app\models\Category::find()->all(), 'id','name')) ?>
+    <?= $form->field($model, 'id_category')->dropDownList(\yii\helpers\ArrayHelper::map(\app\modules\admin\models\Category::find()->all(), 'id','name')) ?>
 
     <div class="form-group">
         <?= Html::submitButton('Сохранить', ['class' => 'btn btn-success']) ?>

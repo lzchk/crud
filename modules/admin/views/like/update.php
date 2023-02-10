@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 
 /** @var yii\web\View $this */
-/** @var app\models\Like $model */
+/** @var app\modules\admin\models\Like $model */
 
 $this->title = 'Обновление избранных: ' . $model->id;
 $this->params['breadcrumbs'][] = ['label' => 'Likes', 'url' => ['index']];

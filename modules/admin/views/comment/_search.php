@@ -25,7 +25,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'created_at') ?>
 
-    <?= $form->field($model, 'id_prod') ?>
+    <?= $form->field($model, 'id_product') ?>
 
     <?php // echo $form->field($model, 'updated_at') ?>
 

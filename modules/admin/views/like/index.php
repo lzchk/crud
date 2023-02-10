@@ -1,13 +1,13 @@
 <?php
 
-use app\models\Like;
+use app\modules\admin\models\Like;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\grid\ActionColumn;
 use yii\grid\GridView;
 
 /** @var yii\web\View $this */
-/** @var app\models\LikeSearch $searchModel */
+/** @var app\modules\admin\models\LikeSearch $searchModel */
 /** @var yii\data\ActiveDataProvider $dataProvider */
 
 $this->title = 'Избранные';

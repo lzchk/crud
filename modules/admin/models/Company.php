@@ -2,6 +2,7 @@
 
 namespace app\modules\admin\models;
 
+use app\models\User;
 use Yii;
 use yii\behaviors\TimestampBehavior;
 use yii\db\Expression;

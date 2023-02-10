@@ -34,7 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'text:ntext',
             'rating',
             'created_at',
-            'id_prod',
+            'id_product',
             [
                 'class' => ActionColumn::className(),
                 'urlCreator' => function ($action, Comment $model, $key, $index, $column) {
